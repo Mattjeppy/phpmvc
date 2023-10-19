@@ -8,8 +8,8 @@ switch ($_SERVER['REQUEST_URI']) {
         require('controller/member.php');
         break;
     case '/school' && isset($_GET['id']):
-        require('controller/school.php');
+        require('controller/schools.php');
         break;
     default:
-        require('controller/home.php');
+        require('controller/schools.php');
 }
